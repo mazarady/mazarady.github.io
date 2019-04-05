@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Unjaded</title>
+
+    <title>maaz munir</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +18,7 @@
     <style>
       body {
         overflow-x: hidden; 
+        /*text-decoration: none !important;*/
 
       }
       @media (min-width: 992px) {
@@ -67,55 +69,36 @@
 	}
 
 	.navbar-brand {
-		color: black !important;
+		color: black;
 	}
 
 	.unjaded_title {
 		font-family: bebe;
 		font-size: 25px !important;
     letter-spacing: .1em !important;
+    z-index: 3;
 	}
 
-
-	.thumbnail {
-    	position: relative;
-	}
+  .unjaded_title:hover {
+    color: black;
+  }
 
 	.caption {
-	    position: absolute;
-	    top: 78%;
+	    /*position: absolute;*/
+	    top: 37%;
 	    left: 5%;
     	color: white;
     	font-family: bebe;
+      
     	
 	}
 
   .caption_text_size {
     font-size: 35px !important;
     letter-spacing: .12em !important;
+
+
   }
-
-	.image {
-	    position:relative;  	    
-	}
-	.image img {
-	    width:100%;
-	    height: 100%;
-
-	}
-	.image:after {
-	    content:'\A';
-	    position:absolute;
-	    width: 100%; height:100%;
-	    top:0; left:0;
-	    background:rgba(0,0,0,0.6);
-	    opacity:0;
-	    transition: all 0.5s;
-	    -webkit-transition: all 0.5s;
-	}
-	.image:hover:after {
-	    opacity:1;
-	}
 
   .active {
     color: black !important;
@@ -136,6 +119,11 @@
   .unjaded_title {
     font-size: 42px!important;
     letter-spacing: .02em !important;
+    
+  }
+
+  .unjaded_title:hover {
+    color: black;
   }
 
   .nav_container{
@@ -151,12 +139,14 @@
     font-size: 2.604166666666667vw;
   }
 
+
 }
 
 @media (max-width: 992px) {
   html, body{
     max-width: 100% !important;
     overflow-x: hidden !important;
+
 
   }
 .navbar {
@@ -167,19 +157,13 @@
   padding-bottom: 0.1vw;
   width: 100%;
   z-index: 1;
-  /*background-color: black !important; */
+
 }
 .story_title {
   padding-top: 24vw !important;
 
 }
-.navbar-collapse{
-  text-align: center !important;
-  box-sizing: border-box !important;
-  height: 100vh !important;
-  overflow: hidden !important;
- 
-}
+
 .menu_position {
     padding-bottom: 1.1em !important;
 }
@@ -197,6 +181,15 @@
     color: white !important;
     background-color: transparent !important;
   }
+
+.bar1, .bar2, .bar3 {
+  display: block !important;
+}
+
+.regular_navigation {
+  display: none;
+}
+
 }
 
 .bar1, .bar2, .bar3 {
@@ -206,12 +199,29 @@
     margin: 5px 0;
     transition: 0.4s;
     border: none;
+    display: none;
 }
 
-.fluid-ratio-resize { 
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4px);
+  background-color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -5px);
+  background-color: white;
+}
+
+.first_picture { 
   max-width: 1500px; /* actual img width */
   height: 1000px; /* actual img height - IE7 */
-  background-image: url(Perrymans_04037.jpg);
+  background-image: url(court.jpeg);
   background-size: cover;
   background-position: center;
   -webkit-transition-property: width, height; /* Safari */
@@ -221,7 +231,7 @@
 
 }
 
-.fluid-ratio-resize:hover > .overlay {
+.first_picture:hover > .hover_pic {
     width:1500px;
     height:1000px;
     position:absolute;
@@ -231,21 +241,52 @@
     -webkit-transition: all 0.5s;
   }
 
-/*.fluid-ratio-resize:after {
-      content:'\A';
-      width: 1500px;
-      height: 1000px;
-      top:0; left:0;
-      background:rgba(0,0,0,0.6);
-      opacity:0;
-      transition: all 0.5s;
-      -webkit-transition: all 0.5s;
+.second_picture { 
+  max-width: 1500px; /* actual img width */
+  height: 1000px; /* actual img height - IE7 */
+  background-image: url(./test.jpeg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition-property: width, height; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: width, height;
+  transition-duration: 2s;
+
+}
+
+.second_picture:hover > .hover_pic {
+    width:1500px;
+    height:1000px;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
 
-  .fluid-ratio-resize:hover:after {
-      opacity:1;
+
+.team-kids { 
+  max-width: 1500px; /* actual img width */
+  height: 1000px; /* actual img height - IE7 */
+  background-image: url(./story_books.jpeg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition-property: width, height; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: width, height;
+  transition-duration: 2s;
+
+}
+
+.team-kids:hover > .hover_pic {
+    width:1500px;
+    height:1000px;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
-*/
 
 .nav{
   padding-bottom: 1em !important;
@@ -255,27 +296,46 @@
 button {
   background-color: transparent;
   border: none;
+
 }
 
 button:focus {outline:0;}
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
-    transform: rotate(-45deg) translate(-6px,4px);
-    background-color: white;
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -4px);
-    transform: rotate(45deg) translate(-6px, -4px);
-    background-color: white;
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
 }
 
-.black_bg {
-  background-color: #111111 !important;
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
 }
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
 
 
   </style>
@@ -284,61 +344,103 @@ button:focus {outline:0;}
 
   <body>
 
+
+
     <div class = "nav_container">
 
       <nav class="navbar navbar-expand-lg navbar-white bg-white" role="navigation">
-        <a class="unjaded_title navbar-brand" href="index.html"><p id = "white_unjaded">UNJADED</p></a>
+        <!-- <a id = "white-unjaded" class="unjaded_title navbar-brand"><p>Maaz Munir</p></a> -->
+      <h1 id = "white-unjaded" class="unjaded_title navbar-brand">
+      <a class="typewrite" data-period="2000" data-type='[ "Maaz Munir", "UX Designer" ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
 
-        <button onclick = "openNav('white');myFunction(this)" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-          <div class = "menu_position">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
+        <div class = "regular_navigation">
+          <ul class="nav navbar-nav navbar-right">
           
-        </button>
-
-
-          <div class="collapse navbar-collapse navbar-toggle navHeaderCollapse">
-            <ul class="nav navbar-nav navbar-right">
-          
-              <li class="nav-item">
-                <a class="nav-link active" href="second.html">FACES
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="second.html">portfolio
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">PLACES</a>
+                <a class="nav-link" href="#">About me</a>
+              </li> -->
+
+              
+
+          </ul>
+
+        </div>
+
+
+        <ul class="nav navbar-nav ml-auto regular_navigation">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Portfolio <span class="sr-only">(current)</span></a>
               </li>
 
               <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Munir_Maaz_Resume.pdf">resume</a>
+              </li>
+          </ul>
+
+        <div id="myNav" class="overlay">
+  
+          <div class = "overlay-content">
+            <ul class="nav navbar-nav navbar-right">
+          
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">about me</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">resume</a>
+              </li>
+
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">VIDEOS</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="#">PRINTS</a>
-              </li>
+              </li> -->
 
+              
+            </ul>
+
+           <!--  <ul class="nav navbar-nav ml-auto">
+   
               <li class="nav-item">
                 <a class="nav-link" href="#">ABOUT US</a>
               </li>
 
-            </ul>
-          
-            <ul class="nav navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">SUBSCRIBE</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FACEBOOK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">INSTAGRAM</a>
-              </li>
-            </ul>
+          </ul> -->
           </div>
         </div>
+
+      
+        <span id = "hamburger">
+          <div class = "menu_position">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
 
       </nav>
     </div>
@@ -346,44 +448,42 @@ button:focus {outline:0;}
 
 
     <!-- Page Content -->
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="story_title">stories about muslims.</h1>
-        </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="story_title">my portfolio.</h1>
       </div>
-
-
-    <div class="fluid-ratio-resize">
-      <div class = "overlay"></div>
     </div>
-    <div class = "caption col-md-4">
-          <h1 class="caption_text_size">Disgusting Cake // Oh Yeah</h1>
+
+  <a href = "team-kids.html" style="text-decoration: none">
+    <div class="team-kids">
+      <div class = "hover_pic"></div>
+      <div class = "caption col-md-12">
+        <h1 class="caption_text_size">TeamKids Superheroes // September 2018 – March 2018</h1>
+        <!-- style="text-shadow: 0.5px 0.5px 4px black; -->
+      </div>
     </div>
+  </a>
+
+  <a href = "craigslist.html" style="text-decoration: none">
+    <div class="second_picture">
+      <div class = "hover_pic"></div>
+      <div class = "caption col-md-12">
+        <h1 class="caption_text_size">Craigslist Redesign // MARCH 2018 – JUNE 2018</h1>
+        <!-- style="text-shadow: 0.5px 0.5px 4px black; -->
+      </div>
+    </div>
+  </a>
+
   
 
-    <!-- 
-    
-	    <div class="thumbnail text-left">
-        
-
-        
-	    	<div class = "image">
-	        	<img src="img/Perrymans_04037.jpg" alt="" class="img-responsive">
-	    	</div>
-	        
-	    </div>
-	</div> -->
-
-    <!-- <div class="row" id="box-search">
-	    <div class="thumbnail text-left">
-	    	<div class = "image">
-	        	<img src="img/charcoal.jpg" alt="" class="img-responsive">
-	    	</div>
-	        <div class="caption">
-	            <h1 class = "caption_text_size">Charcoal Corner // Oh Yeah</h1>
-	        </div>
-	    </div>
-	</div> -->
+  <a href = "article.html" style="text-decoration: none">
+    <div class="first_picture">
+      <div class = "hover_pic"></div>
+      <div class = "caption col-md-12">
+        <h1 class="caption_text_size">Harlem Globetrotters // JUNE 2016 – JUly 2016 </h1>
+      </div>
+    </div>
+  </a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -393,34 +493,66 @@ button:focus {outline:0;}
 
   <script>
 
-    /* Open */
-    var click = document.getElementsByClassName("navbar");
-    var aBool = true;
+  document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Maaz Munir.", "User Experience.", "Web development.", "Maaz Munir."];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
-    function openNav(name) {
-    if (aBool == true) {
-      document.getElementById("white_unjaded").style.color = name;
-      click[0].classList.add("black_bg");
-      aBool = false;
-    } 
-
-    else {
-      click[0].classList.remove("black_bg");
-      document.getElementById("white_unjaded").style.color = "black";
-      aBool = true;
-      
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
     }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+  var hamburger = document.getElementById('hamburger');
+  var menu = document.getElementById('myNav');
+  menu.style.display = "none";
+  hamburger.addEventListener('click', function() {
+  
+  this.classList.toggle("change");
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+    document.getElementById("white-unjaded").style.color = "white";
+    
+
+  } else {
+    menu.style.display = "none";
+    document.getElementById("white-unjaded").style.color = "black";
 
   }
-    function myFunction(x) {
-    x.classList.toggle("change");
-    }
-
-  function add_col_md_4((x) {
-    x.classList.add("col-md-4");
-  }
-
+})
   </script>
-
 </html>
 

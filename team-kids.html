@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>teamkids</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 2.1em;
+        }
+      }
+
+      @font-face {
+      	font-family: bebe;
+      	src: url(Fonts/BebasNeue-Bold.ttf);
+      }
+
+	  @font-face {
+    	font-family: proxima;
+    	src: url(Fonts/Metropolis-Medium.otf);
+		}
+
+		@font-face {
+    	font-family: proxima-semi-bold;
+    	src: url(Fonts/Metropolis-SemiBold.otf);
+		}
+
+		@font-face {
+    	font-family: proxima-bold;
+    	src: url(Fonts/Metropolis-Bold.otf);
+		}
+
+		
+
+	  @font-face {
+    	font-family: proxima-light;
+    	src: url(Fonts/Metropolis-Light.otf);
+		}
+
+	.nav-link {
+		font-family: proxima;
+		color: #bbb !important;
+		font-size: 0.71em !important;
+		letter-spacing: .2em !important;
+		text-transform: uppercase;
+
+	}
+
+  p {
+    font-size: 15px;
+    font-family: proxima; 
+    line-height: 2.2em; 
+    letter-spacing: .03em; 
+    word-wrap: break-word;
+
+  }
+
+
+	.nav-link:hover {
+		color: black !important;
+		background-color: white !important;
+	}
+
+	.navbar-brand {
+		color: black;
+	}
+
+	.unjaded_title{
+		font-family: bebe;
+		font-size: 25px !important;
+	    letter-spacing: .1em !important;
+	    z-index: 3;
+	}
+
+	.unjaded_title:hover {
+		color: black;
+	}
+
+  .nav_container {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+@media only screen and (min-width: 992px) {
+
+  .unjaded_title {
+    font-size: 42px!important;
+    letter-spacing: .02em !important;
+  }
+
+  .unjaded_title:hover {
+  	color: black;
+  }
+
+  .nav_container{
+    position: relative;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 3.4em;
+    padding-bottom: 1.2em;
+    padding-right: 2.9em;
+  }
+
+}
+
+@media (max-width: 992px) {
+  html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+
+  }
+  article {
+  	padding-top: 7rem;
+  }
+.navbar {
+	position: fixed;
+	padding-top: 3.1vw;
+	padding-left: 5vw;
+	padding-right: 4.3vw;
+  	padding-bottom: 0.1vw;
+  	left: 0;
+  	right: 0;
+
+}
+
+.menu_position {
+    padding-bottom: 1.1em !important;
+}
+
+.nav-link{
+  font-family: bebe !important;
+  font-size: 1.750em !important;
+  letter-spacing: .12em !important;
+  line-height: 1em !important;
+  color: white !important;
+
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: transparent !important;
+  }
+
+.bar1, .bar2, .bar3 {
+  display: block !important;
+}
+
+.regular_navigation {
+  display: none;
+}
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+    border: none;
+    display: none;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4px);
+  background-color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -5px);
+  background-color: white;
+}
+
+.nav{
+  padding-bottom: 1em !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+article {
+    max-width: 950px;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+nav {
+	position: fixed;
+}
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <div class = "nav_container">
+
+      <nav class="navbar navbar-expand-lg navbar-white bg-white" style="z-index: 99" role="navigation">
+        <a id = "white-unjaded" class="unjaded_title navbar-brand" href="index.html"><p class="unjaded_title">Maaz Munir</p></a>
+
+        <div class = "regular_navigation">
+          <ul class="nav navbar-nav navbar-right">
+          
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="second.html">portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li> -->
+
+              
+
+          </ul>
+
+        </div>
+
+
+        <ul class="nav navbar-nav ml-auto regular_navigation">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Munir_Maaz_Resume.pdf">resume</a>
+              </li>
+          </ul>
+
+        <div id="myNav" class="overlay">
+  
+          <div class = "overlay-content">
+            <ul class="nav navbar-nav navbar-right">
+          
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">about me</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">resume</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">VIDEOS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRINTS</a>
+              </li> -->
+
+              
+            </ul>
+
+           <!--  <ul class="nav navbar-nav ml-auto">
+   
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUBSCRIBE</a>
+              </li>
+          </ul> -->
+          </div>
+        </div>
+
+      
+        <span id = "hamburger">
+          <div class = "menu_position">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
+
+      </nav>
+    </div>
+
+        <span id = "hamburger">
+          <div class = "menu_position">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
+      </nav>
+    </div>
+
+
+    <!-- Page Content -->
+    <article class = "text-center">
+ 
+	    <h1 style="font-family: bebe; font-size: 43px; color: rgb(51, 51, 51); letter-spacing: .06em; line-height: 1.5em;">TeamKids Superheroes</h1>
+
+  		<h2 class = "mt-2" style="font-size: 13px; font-family: proxima; color: rgb(187, 187, 187); letter-spacing: .15em; font-weight: 400; text-transform: uppercase;">September 2018 - March 2019</h2>
+  		<p class = "mt-2" style="font-size: 15px; text-transform: uppercase; font-family: proxima-bold; color: rgb(17, 17, 17); line-height: 2.2em; letter-spacing: .03em;">User Experience Researcher & Designer</p>
+  		<img class = "mt-2" src="./team-kids-police.jpg">
+
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"> Overview
+      </h3>
+
+
+  		<p class = "text-left" style="font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">
+  		    	TeamKids is a non-profit organization geared towards empowering young children to change the world. Through specially curated activities, children have the opprotunity to engage with their broader community, enact change, and take one bold step to make a difference. 
+  		</p>
+
+      <h3 class = "mt-3 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"> Problem
+      </h3>
+      <p class = "text-left" style="font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">
+        TeamKids reached out asking if we would like to create a more concise and detailed website centered around the Team Kids Challenge. This website, Team Kids Superheroes, would allow kids in schools not touched by the organization to experience the same lessons and feelings of empowerment as the current Team Kids affiliated schools. These new kids will work to complete service missions with their parents and earn bus stickers for each completed mission online. As you will see, we were able to accomplish their vision of empowering kids everywhere!
+
+      </p>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="unnamed.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">TeamKids Superhero Booklet</p></figcaption>
+          </figure>
+      </div>
+
+
+      <h3 class = "mt-3 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"> Assumptions
+      </h3>
+
+      <p class = "text-left" style="font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">
+        Below are a list of assumptions our team made prior to the development of the TeamKids Superheroes webpage.
+      </p>
+
+      <ul>
+
+        <li>
+          <p class = "text-left">Users have access to a computer.</p>
+        </li>
+
+        <li>
+          <p class = "text-left">User has a novice understanding of how to use a computer and an email account.</p>
+        </li>
+        <li>
+          <p class = "text-left">A users’ parent/guardian has an email account.</p>
+        </li>
+        <li>
+          <p class = "text-left">Users have a basic understanding of how to navigate through a website or has a parent/guardian who has basic understanding of how to navigate a website</p>
+        </li>
+        <li>
+          <p class = "text-left">User has access to a car, train or some mode of transportation to complete the mission’s that require transportation. </p>
+        </li>
+        <li>
+          <p class = "text-left">Users know how to take a picture (either with a camera or on a phone) or has a parent/ guardian that can take a picture for them.</p>
+        </li>
+        <li>
+          <p class = "text-left">Users can type or has a parent/guardian that can type on a computer or laptop</p>
+        </li>
+      </ul>
+
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"> Use-Case and UML Diagrams
+      </h3>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="use-case.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Use-Case Diagram</p></figcaption>
+          </figure>
+      </div>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="unnamed (1).jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">UML Diagram</p></figcaption>
+          </figure>
+      </div>
+
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Sketches
+      </h3>
+
+      <p class="text-left"> These were sketches for the mission page we planned on implementing for the website. The first incorporated a section where we imagined a picture of the child to potentially go; however, after multiple discussions we decided on the latter iteration. This was an instrumental group session where we decided on which <i>rough</i> design to move forward with. This ultimately served as the foundation for our low and high-fidelity mockups and our website as a whole.</p>
+
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="IMG_3410.JPG">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Mission Page: Rough Iteration</p></figcaption>
+          </figure>
+      </div>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="IMG_3412.JPG">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Mission Page: Final Iteration</p></figcaption>
+          </figure>
+      </div>
+
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Personas & Scenarios
+      </h3>
+
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="first-persona.png">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Haley Jameson</p></figcaption>
+          </figure>
+      </div>
+
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="second-persona.png">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Jacob Smith</p></figcaption>
+          </figure>
+      </div>
+
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Storyboards
+      </h3>
+
+      <p class="text-left">This was another research technique we used to garner a more holistic understanding of the product we wanted to develop. It allowed us to understand what was happening in the world of the children, what potential challenges they would face, and the course of a mission from start to finish.</p>
+
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="story-board-1.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="story-board-2.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="story-board-3.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">High-Fedelity Mockups
+      </h3>
+
+      <ol style="font-size: 15px; text-align: left; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">
+        <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Log-in Page:</strong> 
+          <br>
+
+          <p class="text-left">
+          When creating the Login page, we dabbled with the idea of making the layout fun and exciting because Team Kids Superheroes is a kids website. However, making it more simple makes getting started easier because there is no visual clutter. Kids can wait until after logging in until the website becomes more interesting. Parents with very young children would also have to help them makes accounts and it would be beneficial to them to have a familiar login layout for the very first time.
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Login.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Profile:</strong> 
+          <br>
+
+          <p class="text-left">
+The profile is fairly simplistic. It only includes the name, general location, email, and gender of the user. The profile picture is going to be a stock image that the child selects from a variety of images. This is to protect the privacy of the child and not unnecessarily include any of their personal information. We wanted to include the stickers that the child earns from completing their missions on the profile and will possibly include a sidebar on the right side of the page like in the second image below.
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Profile.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Signup Page:</strong> 
+          <br>
+
+          <p class="text-left">
+          We wanted to get a broad area of the user’s location so that local challenges could be directed to the users. Other designs with the address and zip code were considered, but ultimately we decided that an exact address can potentially compromise the child’s privacy and with no reason because our goals did not need a precise location to work. This way, Team Kids is able to send children local challenges for them to complete and the child’s home address is not needlessly given. 
+          This layout is streamlined and straightforward to keep consistency with the login page. We have all the information centered in the middle of the screen with plenty of whitespace on the sides to present the content in a professional and intuitive manner. Some of our concerns were that the website looks a little plain this way, but we might be able to have Team Kids commission some assets or procure images that we can use to decorate the side.
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Sign Up.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Homepage:</strong> 
+          <br>
+
+          <p class="text-left">
+          Once we get to the Home page, the design begins to be more fun and interactive. We want to make sure the buttons are big and easily capture a kid’s attention. The bubbles will highlight when they get hovered over and grow bigger to be flashy and exciting. This page contrasts the login page by not being as clean and efficient. We wanted to make the home page easy to navigate for children and fun at the same time. This is accomplished by not having many icons on the home page, but they are big and colorful which makes them easy to spot. The Team Kids logo is included here as a placeholder, but the Team Kids Superheroes site will have its own logo to constantly reinforce to users what website they are on.
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Home Page.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Current Missions:</strong> 
+          <br>
+
+          <p class="text-left">
+            The Current Missions page shows the active missions to accomplish in the area. Each missions is listed row by row, which is intuitive and easy to follow. We use the Team Kids colors in order to make the missions pop out more on the page. Each mission could have been added as circles much like the home page, but we decided against it because the circles are what makes the home page stand out from the rest of the pages. Here the missions are shown in a more clean design layout and more systematically. We can add a scroll wheel that goes down when more missions are added as opposed to making a bunch of circles in random locations, which can get cluttered and unintuitive very quickly.
+
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Current Missions.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Past Missions:</strong> 
+          <br>
+
+          <p class="text-left">
+            The past missions page lists all the previous missions that the child has completed. In addition to the status displayed on the right, there is also a sticker that is associated with the mission. Clicking one of the missions will take the user to that specific mission.
+
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/Past Missions.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">Sample Mission Page, Writeup, and Dragging Stickers:</strong> 
+          <br>
+
+          <p class="text-left">
+            The mission page contains details around speicific missions and explains the requirements in order to complete them. Children can upload an image(optional) about their progress on the mission. Additionally, children are required to write a reflection by clicking “Write an Reflection” before he/she can drag a sticker. Dragging a sticker to outlined box will complete the mission. The second image is an example of a user writing a reflection about their experience, and the third is a mockup of how to drag a sticker to complete the mission. 
+
+          </p>
+        </li>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/mission_1.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/reflection.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/sticker drag.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+      </div>
+
+      <li class = "mt-3"> <strong style="font-family: proxima-bold; font-size: 18px;">News and About Pages:</strong> 
+          <br>
+
+          <p class="text-left">
+            The first image is integral for all children as it serves as an announcement page. It will contain all the messages the administrator would post--including new missions. The second mockup is the about page of the website that details the vision and mission of TeamKids. 
+
+            
+
+          </p>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/news.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+        </div>
+
+        <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/about.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+        </div>
+        </li>
+    </ol>
+
+    <h3 class = "mt-5 text-left" style="font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">Conclusion
+    </h3>
+
+    <p class="text-left">
+      In a span of 20 weeks, the team was able to create a full scale website that enabled children across the world to partake in various missions and challenges in their respective communities. Our research, sketches, personas, prototypes, and mock-ups all contributed to the resulting product. Proud to have been part of the Teamkids family, an organization empowering children one child at a time.  
+            
+
+          </p>
+
+    <div class="mt-4 col-md-12 text-center">
+          <figure class="figure">
+              <img class= "img-fluid" src="./teamkids-high/TeamKids_poster_2_26-min.jpg">
+              <figcaption class="figure-caption"><p style="color: #212529; font-size: 15px; font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;"></p></figcaption>
+          </figure>
+        </div>
+
+
+
+    <p class = "mt-5 text-center" style="font-size: 15px;font-family: proxima; line-height: 2.2em; letter-spacing: .03em; word-wrap: break-word;">
+  Words: Maaz Munir
+  <br>
+  <a target = "_blank" href = "https://teamkidssuperhero.com/" style="color: gray;">Website</a>
+</p> 
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+	</article>
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <script>
+
+  var hamburger = document.getElementById('hamburger');
+  var menu = document.getElementById('myNav');
+  menu.style.display = "none";
+  hamburger.addEventListener('click', function() {
+  
+  this.classList.toggle("change");
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+    document.getElementById("white-unjaded").style.color = "white";
+    
+
+  } else {
+    menu.style.display = "none";
+    document.getElementById("white-unjaded").style.color = "black";
+
+  }
+})
+  </script>
+
+  
+</html>
+
