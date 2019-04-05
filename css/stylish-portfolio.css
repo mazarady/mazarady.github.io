@@ -1,0 +1,139 @@
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro'; }
+
+ @font-face {
+    font-family: bebe;
+    src: url(../Fonts/BebasNeue-Bold.otf);
+}
+
+@font-face {
+    font-family: proxima;
+    src: url(../Fonts/Metropolis-Regular.otf);
+}
+
+@font-face {
+    font-family: proxima-light;
+    src: url(../Fonts/Metropolis-Light.otf);
+}
+
+
+h1{
+  font-family: bebe;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.01em !important;
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.9em !important;
+}
+h2,
+h3{
+  font-family: proxima;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.14em !important;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1em !important;
+}
+h4{
+  font-family: proxima-light;
+  font-style: lighter !important;
+  font-weight: 0 !important;
+  letter-spacing: 0.01em !important;
+  color: white;
+  text-transform: none;
+  padding-bottom: 0.6em !important;
+}
+
+.container2 {
+  padding-right: 1.7em !important;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url("../img/homepage2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+
+  .masthead h1 {
+    font-size: 4em; }
+
+  .masthead h3 {
+    font-size: 1.188em;
+
+  }
+  .masthead h4 {
+    font-size: 0.9375em;
+  }
+
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh; }
+      .masthead h1 {
+        font-size: 8em; } 
+      .container2 {
+        padding-right: 4.3em !important;
+      }
+
+
+    a:hover, a:active {
+      background-color: white !important;
+      color: black !important; 
+    }
+
+      }
+
+  @media (min-width: 992px) {
+    .masthead {
+
+      height: 100vh; }
+      .masthead h3 {
+        font-size: 1.375em; } }
+
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh; }
+      .masthead h4 {
+        font-size: 0.9375em; } }
+
+a {
+  font-family: bebe !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  letter-spacing: 0.14em !important;
+  color: white !important;
+  text-transform: uppercase !important;
+  background-color: transparent !important;
+  color: white !important; 
+  border: 2px solid white !important;
+  border-radius: 0px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+
+  padding-top: 1em !important;
+  padding-right: 1.44em !important;
+  padding-right: calc(1.44em - .14em) !important;
+  padding-bottom: 1em !important;
+  padding-left: 1.44em !important;
+
+}
+  a:hover, a:active {
+    background-color: white !important;
+    color: black !important; 
+  }

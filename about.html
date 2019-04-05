@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>maaz munir</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 2.1em;
+        }
+      }
+
+      @font-face {
+      	font-family: bebe;
+      	src: url(Fonts/BebasNeue-Bold.ttf);
+      }
+
+	  @font-face {
+    	font-family: proxima;
+    	src: url(Fonts/Metropolis-Medium.otf);
+		}
+
+		@font-face {
+    	font-family: proxima-semi-bold;
+    	src: url(Fonts/Metropolis-SemiBold.otf);
+		}
+
+		@font-face {
+    	font-family: proxima-bold;
+    	src: url(Fonts/Metropolis-Bold.otf);
+		}
+
+		
+
+	  @font-face {
+    	font-family: proxima-light;
+    	src: url(Fonts/Metropolis-Light.otf);
+		}
+
+	.nav-link {
+		font-family: proxima;
+		color: #bbb !important;
+		font-size: 0.71em !important;
+		letter-spacing: .2em !important;
+		text-transform: uppercase;
+
+	}
+
+
+	.nav-link:hover {
+		color: black !important;
+		background-color: white !important;
+	}
+
+	.navbar-brand {
+		color: black;
+	}
+
+	.unjaded_title{
+		font-family: bebe;
+		font-size: 25px !important;
+	    letter-spacing: .1em !important;
+	    z-index: 3;
+	}
+
+	.unjaded_title:hover {
+		color: black;
+	}
+
+  .nav_container {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+@media only screen and (min-width: 992px) {
+
+  .unjaded_title {
+    font-size: 42px!important;
+    letter-spacing: .02em !important;
+  }
+
+  .unjaded_title:hover {
+  	color: black;
+  }
+
+  .nav_container{
+    position: relative;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 3.4em;
+    padding-bottom: 1.2em;
+    padding-right: 2.9em;
+  }
+
+}
+
+@media (max-width: 992px) {
+  html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+
+  }
+  article {
+  	padding-top: 7rem;
+  }
+.navbar {
+	position: fixed;
+	padding-top: 3.1vw;
+	padding-left: 5vw;
+	padding-right: 4.3vw;
+  	padding-bottom: 0.1vw;
+  	left: 0;
+  	right: 0;
+
+}
+
+.menu_position {
+    padding-bottom: 1.1em !important;
+}
+
+.nav-link{
+  font-family: bebe !important;
+  font-size: 1.750em !important;
+  letter-spacing: .12em !important;
+  line-height: 1em !important;
+  color: white !important;
+
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: transparent !important;
+  }
+
+.bar1, .bar2, .bar3 {
+  display: block !important;
+}
+
+.regular_navigation {
+  display: none;
+}
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+    border: none;
+    display: none;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4px);
+  background-color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -5px);
+  background-color: white;
+}
+
+.nav{
+  padding-bottom: 1em !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+article {
+    max-width: 500px;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+nav {
+	position: fixed;
+}
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <div class = "nav_container">
+
+      <nav class="navbar navbar-expand-lg navbar-white bg-white" role="navigation">
+        <a id = "white-unjaded" class="unjaded_title navbar-brand" href="second.html"><p>Maaz Munir</p></a>
+
+        <div class = "regular_navigation">
+          <ul class="nav navbar-nav navbar-right">
+          
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="second.html">portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li> -->
+
+              
+
+          </ul>
+
+        </div>
+
+
+        <ul class="nav navbar-nav ml-auto regular_navigation">
+              <li class="nav-item">
+                <a class="nav-link active" href="second.html">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Munir_Maaz_Resume.pdf">resume</a>
+              </li>
+          </ul>
+
+        <div id="myNav" class="overlay">
+  
+          <div class = "overlay-content">
+            <ul class="nav navbar-nav navbar-right">
+          
+              <li class="nav-item">
+                <a class="nav-link active" href="second.html">portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">about me</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">resume</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">VIDEOS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRINTS</a>
+              </li> -->
+
+              
+            </ul>
+
+           <!--  <ul class="nav navbar-nav ml-auto">
+   
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUBSCRIBE</a>
+              </li>
+          </ul> -->
+          </div>
+        </div>
+
+      
+        <span id = "hamburger">
+          <div class = "menu_position">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
+
+      </nav>
+    </div>
+
+        <span id = "hamburger">
+          <div class = "menu_position">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
+      </nav>
+    </div>
+
+
+    <!-- Page Content -->
+    <article class = "text-center">
+
+      
+      <img class= "img-fluid" style="z-index: -44"src="./teamkids-high/circle_me.gif">
+
+      <h3 class = "mt-5 text-center" style="font-size: 14px; text-transform:uppercase; font-family: proxima-bold; line-height: 2.2em; letter-spacing: 3.22px; word-wrap: break-word;"><strong>Welcome to my Portfolio</strong></h3>
+
+      <p class = "text-center" style="font-size: 15px; font-family: proxima; line-height: 1.9em; letter-spacing: .03em; word-wrap: break-word;">
+        I am currently a senior studying Informatics at the University of California, Irvine. Specializing in Human Computer Interaction.
+      </p>
+
+        
+      
+              
+
+      
+	</article>
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <script>
+
+  var hamburger = document.getElementById('hamburger');
+  var menu = document.getElementById('myNav');
+  menu.style.display = "none";
+  hamburger.addEventListener('click', function() {
+  
+  this.classList.toggle("change");
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+    document.getElementById("white-unjaded").style.color = "white";
+    
+
+  } else {
+    menu.style.display = "none";
+    document.getElementById("white-unjaded").style.color = "black";
+
+  }
+})
+  </script>
+
+  
+</html>
+
